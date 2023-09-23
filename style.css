@@ -2,9 +2,14 @@
     box-sizing: border-box;
 }
 
+body {
+    background: lightblue;
+}
+
 .menu {
     display: flex;
     justify-content: center;
+    background: grey;
 }
 
 .menu li {
