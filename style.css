@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    width: 150px;
+    list-style: none;
+    background: lightblue;
+    position: relative;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.menu a:hover {
+    background: lightgray;
+}
+
+.menu ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0;
+}
+
+.menu li:hover > ul {
+    display: block;
+
+}
+
+.menu ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
