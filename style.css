@@ -4,13 +4,17 @@
 
 .menu {
     display: flex;
+    justify-content: center;
 }
 
 .menu li {
-    width: 150px;
+    width: 200px;
     list-style: none;
-    background: lightblue;
+    background: grey;
     position: relative;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .menu a {
@@ -18,18 +22,19 @@
     text-decoration: none;
     display: block;
     text-align: center;
-    padding: 0 10px;
+    font-weight: 700;
 }
 
-.menu a:hover {
-    background: lightgray;
+.menu li:hover {
+    background: lightblue;
+    border: 1px solid;
 }
 
-.menu ul {
+.dropdown-menu {
     position: absolute;
+    display: none;
     left: 0;
     top: 100%;
-    display: none;
     padding: 0;
 }
 
@@ -38,9 +43,7 @@
 
 }
 
-.menu ul ul {
-    display: none;
-    position: absolute;
+.dropdown-item {
     top: 0;
     left: 100%;
 }
